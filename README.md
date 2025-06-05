@@ -1,78 +1,55 @@
-<<<<<<< HEAD
-# Welcome to your Lovable project
+# Sheikh Shessi's Marketing Brain
 
-## Project info
+A personalized AI Chat Interface built with React, TypeScript, Vite, Tailwind CSS, and shadcn-ui, powered by the Gemini API.
 
-**URL**: https://lovable.dev/projects/1dc1df2b-0932-4bb1-ba9e-5edfebbf91d7
+This application is designed to provide strategic marketing intelligence and resources specifically for Sheikh Shessi.
 
-## How can I edit this code?
+## Setup and Running
 
-There are several ways of editing your application.
+1.  **Clone the repository:**
 
-**Use Lovable**
+    ```bash
+    git clone <YOUR_REPOSITORY_URL>
+    cd shessiMarketingBrain
+    ```
+    Replace `<YOUR_REPOSITORY_URL>` with the HTTPS URL of your GitHub repository.
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/1dc1df2b-0932-4bb1-ba9e-5edfebbf91d7) and start prompting.
+2.  **Install dependencies:**
 
-Changes made via Lovable will be committed automatically to this repo.
+    ```bash
+    npm install
+    ```
 
-**Use your preferred IDE**
+3.  **Set up environment variables:**
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+    Create a `.env` file in the root of your project and add your Gemini API key:
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+    ```env
+    VITE_GEMINI_API_KEY=your_gemini_api_key_here
+    ```
+    Replace `your_gemini_api_key_here` with your actual Gemini API key.
 
-Follow these steps:
+    **Important:** Make sure to add `.env` to your `.gitignore` file to prevent committing your API key.
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+4.  **Run the application:**
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+    ```bash
+    npm run dev
+    ```
 
-# Step 3: Install the necessary dependencies.
-npm i
+    The application should now be running, typically accessible at `http://localhost:8080/` or another port indicated in your terminal.
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
+## Technologies Used
 
-**Edit a file directly in GitHub**
+*   React
+*   TypeScript
+*   Vite
+*   Tailwind CSS
+*   shadcn-ui
+*   Google Generative AI SDK (for Gemini API)
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+## Customization
 
-**Use GitHub Codespaces**
-
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
-
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/1dc1df2b-0932-4bb1-ba9e-5edfebbf91d7) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
-=======
-# shessiMarketingBrain
-A personalized Marketing Brain  built with React and TypeScript, powered by the Gemini API. Designed as my Marketing Brain and contain all my favourite marketing Gururs, Books and Philosophies as Reference.
->>>>>>> e5e6740a916c5b1f8264aca6def5b08ee316a9d5
+*   **Personalization:** The welcome messages and input placeholder can be easily updated in `src/components/ChatInterface.tsx`.
+*   **API Key:** Ensure your `.env` file is correctly configured with a valid Gemini API key.
+*   **Quick Actions (Removed):** The original Quick Actions feature was removed for a simplified chat experience. If you wish to re-implement it, you can refer to previous versions of the code.
